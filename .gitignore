@@ -40,12 +40,20 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# local database dumps & backups
-sql/
+# Internal database exports - NEVER COMMIT
 *.sql
+*.SQL
+**/*.sql
+**/*.SQL
+
+# Database dumps and backups
+*.dump
+*.bak
+*.backup
+sql/
 qcdb.sql
 *.backup*.json
-*.bak
+*.staging.json
 
 # cloudflare wrangler
 .wrangler/
